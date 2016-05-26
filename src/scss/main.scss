@@ -1,0 +1,64 @@
+#main {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  &.ng-enter {
+    transition: .5s;
+    opacity: 0;
+  }
+
+  &.ng-enter-active { opacity: 1; }
+}
+
+.no-left-pad { padding-left: 0px !important; }
+
+.active { text-decoration: underline; }
+
+.right-align { text-align: right; }
+
+@media (min-width: $hd-min) and (max-width: $hd-max) {
+  #main {
+    top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  #main {
+    top: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #main {
+    top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #main {
+    font-size: 12px;
+    top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 375px) {
+  #main {
+    font-size: 12px;
+    top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

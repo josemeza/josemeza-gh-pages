@@ -1,0 +1,22 @@
+<div id="list">
+
+  <a ui-sref="{{ project.url }}"
+     ng-repeat="(name, project) in projects"
+     class="list-row columns">
+
+    <span class="list-group col-s-1-2 col-m-1-2 col-l-1-3 col-xl-1-4">
+      <span class="list-year">
+        <span>{{ project.year }}</span>
+      </span>
+      <span>
+        {{ project.title }}
+      </span>
+    </span>
+
+    <span class="col-s-1-2 col-m-1-2 col-l-1-3 col-xl-1-4">
+      {{ project.organization }}
+    </span>
+
+  </a>
+
+</div>

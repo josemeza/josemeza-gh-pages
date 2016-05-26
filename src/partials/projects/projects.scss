@@ -1,0 +1,117 @@
+.case-paragraph,
+#case-info,
+#meta-info { 
+  margin-bottom: 25px;
+  line-height: 200%;
+   }
+
+#meta-info { padding-right: 0px; }
+
+.case-images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include calc("width", "100% + 25px");
+  margin-left: -12.5px;
+
+  > img {
+    height: 100%;
+    margin-bottom: 25px;
+    min-width: 25%;
+
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+  }
+}
+
+#previous,
+#next,{
+  margin-bottom: 25px;
+  margin-top: 25px;
+
+  &:hover { cursor: pointer; }
+}
+
+#previous { float: left; }
+#next { float: right; }
+
+.center { text-align: center; }
+
+.case-section {
+  font-size: 15px;
+  line-height: 150%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+
+.case-caption {
+  display: flex;
+  flex-direction: column;
+  line-height: 150%;
+  margin-top: 12.5px;
+  margin-bottom: 25px;
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+}
+
+.case-paragraph,
+#meta-info { line-height: 150%; }
+
+@media (min-width: $hd-min) and (max-width: $hd-max) {
+  #case-info { 
+    flex-direction: row;
+    font-size: 15px;
+    }
+
+  #previous,
+  #next {font-size: 20px;}
+}
+
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  #case-info { 
+    flex-direction: row;
+    font-size: 15px; 
+    }
+
+  #previous,
+  #next {font-size: 20px;}
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #case-info { 
+    flex-direction: column; 
+    font-size: 14px;
+  }
+
+  .case-paragraph,
+  #case-info,
+  #meta-info { margin-bottom: 12.5px; }
+
+  #previous,
+  #next {font-size: 18px;}
+}
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #case-info { 
+    flex-direction: column;
+    font-size: 12px;
+    }
+
+  .case-paragraph,
+  #case-info,
+  #meta-info { margin-bottom: 12.5px; }
+  .case-section, 
+  #previous,
+  #next { 
+    font-size: 14px; } 
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .case-section,
+  #previous,
+  #next { 
+    font-size: 12px; }
+}

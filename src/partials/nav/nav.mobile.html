@@ -1,0 +1,16 @@
+<nav id="m-nav" ng-controller="ListCtrl" class="columns" ng-class="{'home': isActive('/home')}">
+
+
+    <a class="c-hand"
+       ng-class="{'active': isActive('/about')}"
+       ng-if="!currentCase"
+       ui-sref="about">About</a>
+
+    <a ng-if="currentCase"
+         ng-class="{'nav-header': currentCase}">{{ projects[currentCase].header }}</a>
+
+    <a class="right-align"
+         ng-class="{'active': isActive('/images')}"
+         ui-sref="images">Work</a>
+
+</nav>

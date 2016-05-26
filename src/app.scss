@@ -1,0 +1,50 @@
+/** Global variables **/
+$mobile-min: 0px;
+$mobile-max: 425px;
+
+$tablet-min: 426px;
+$tablet-max: 768px;
+
+$desktop-min: 769px;
+$desktop-max: 1024px;
+
+$hd-min: 1025px;
+$hd-max: 2440px;
+
+/** Mixins **/
+@mixin calc($key, $value) {
+  #{$key}: -webkit-calc(#{$value});
+  #{$key}: -moz-calc(#{$value});
+  #{$key}: -ms-calc(#{$value});
+  #{$key}: calc(#{$value});
+}
+
+/** Custom font face **/
+@font-face {
+	font-family: Theinhardt-Reg;
+	src: url(./assets/fonts/Theinhardt/TheinhardtReg.otf);
+}
+
+@font-face {
+	font-family: Theinhardt-Thin;
+	src: url(./assets/fonts/Theinhardt/TheinhardtThin.otf);
+}
+
+/** App styles **/
+body { font-family: 'Theinhardt-Reg', Helvetica, sans-serif; }
+
+@import "scss/reset.scss";
+@import "scss/grid.scss";
+@import "scss/main.scss";
+
+/** Partial views **/
+@import "partials/nav/nav.scss";
+@import "partials/nav/nav.mobile.scss";
+@import "partials/list/list.scss";
+@import "partials/tiles/images.scss";
+@import "partials/about/about.scss";
+@import "partials/home/home.scss";
+
+/** Project sheets **/
+@import "partials/projects/projects.scss";
+

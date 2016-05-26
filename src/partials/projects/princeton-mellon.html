@@ -1,0 +1,33 @@
+<div class="project-case">
+
+  <div id="case-info" class="columns">
+
+    <span id="meta-info" class="s-no-pad m-no-pad col-l-1-3 col-xl-1-4">
+      <div>{{ projects[currentCase]['year'] }}</div>
+      <!--<div>{{ projects[currentCase]['organization'] }}</div>-->
+      <div>{{ projects[currentCase]['title'] }}</div>
+    </span>
+
+    <span class="s-no-pad m-no-pad col-l-2-3 col-xl-3-4">
+      <div class="case-paragraph" ng-repeat="paragraph in projects[currentCase]['description']">
+        {{ paragraph }}
+      </div>
+    </span>
+
+  </div>
+
+  <div class="case-images columns">
+    <img src="dist/assets/compressed/Princeton Mellon/PM1.png" class="img-1-4" />
+    <img src="dist/assets/compressed/Princeton Mellon/PM2.png" class="img-1-4" />
+    <img src="dist/assets/compressed/Princeton Mellon/PM3.png" class="img-1-4" />
+    <img src="dist/assets/compressed/Princeton Mellon/PM4.png" class="img-1-4" />
+    <img src="dist/assets/compressed/Princeton Mellon/PM5.png" class="img-1-4" />
+    <img src="dist/assets/compressed/Princeton Mellon/PM6.png" class="img-1-4" />
+    <img src="dist/assets/compressed/Princeton Mellon/PM7.png" class="img-1-4" />
+    <img src="dist/assets/compressed/Princeton Mellon/PM8.png" class="img-1-4" />
+  </div>
+
+  <a id="previous" ng-click="goToPrevious()">Previous</a>
+  <a id="next" ng-click="goToNext()">Next</a>
+
+</div>

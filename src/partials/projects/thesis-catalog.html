@@ -1,0 +1,64 @@
+<div class="project-case">
+
+  <div id="case-info" class="columns">
+
+    <span id="meta-info" class="s-no-pad m-no-pad col-l-1-3 col-xl-1-4">
+      <div>{{ projects[currentCase]['year'] }}</div>
+      <!--<div>{{ projects[currentCase]['organization'] }}</div>-->
+      <div>{{ projects[currentCase]['title'] }}</div>
+    </span>
+
+    <span class="s-no-pad m-no-pad col-l-2-3 col-xl-3-4">
+      <div class="case-paragraph" ng-repeat="paragraph in projects[currentCase]['description']">
+        {{ paragraph }}
+      </div>
+    </span>
+
+  </div>
+
+  <div class="case-images columns">
+
+
+  <img src="dist/assets/compressed/Thesis Catalog/cover.jpg" class="img-1-3 off-1-8" />
+  <img src="dist/assets/compressed/Thesis Catalog/cover_detail.jpg" class="img-1-3 off-125" />
+  
+  <img src="dist/assets/compressed/Collages/amazon.jpg" class="img-1-4" />
+  <img src="dist/assets/compressed/Collages/brick.jpg" class="img-1-4" />
+  <img src="dist/assets/compressed/Collages/burlap.jpg" class="img-1-4" />
+  <img src="dist/assets/compressed/Collages/carpet.jpg" class="img-1-4" />
+  <img src="dist/assets/compressed/Collages/concrete.jpg" class="img-1-3" />
+  <img src="dist/assets/compressed/Collages/maquette.jpg" class="img-1-3" />
+  <img src="dist/assets/compressed/Collages/marble.jpg" class="img-1-3" />
+  
+  <img src="dist/assets/compressed/Collages/tile.jpg" class="img-1-4" />
+  <img src="dist/assets/compressed/Collages/steel floor.jpg" class="img-1-2" />
+  <img src="dist/assets/compressed/Collages/veneer brick.jpg" class="img-1-4" />
+
+  <img src="dist/assets/compressed/Thesis Catalog/detail collage.jpg" class="img-1-3" />
+  <img src="dist/assets/compressed/Thesis Catalog/interior collage.jpg" class="img-1-3" />
+  <img src="dist/assets/compressed/Thesis Catalog/top collage.jpg" class="img-1-3" />
+
+  <img src="dist/assets/compressed/Thesis Catalog/Elevations-03.jpg" class="img-1-3" />
+  <img src="dist/assets/compressed/Thesis Catalog/Elevations-04.jpg" class="img-1-3" />
+  <img src="dist/assets/compressed/Thesis Catalog/Elevations-05.jpg" class="img-1-3" />
+
+
+
+  <img src="dist/assets/compressed/Collages/dust pan.jpg" class="img-1-3 off-1-8" />
+  <img src="dist/assets/compressed/Collages/lays v2.jpg" class="img-1-3 off-125" />
+
+
+  <img src="dist/assets/compressed/Thesis Catalog/model 2.jpg" class="img-2-3" />
+  <img src="dist/assets/compressed/Thesis Catalog/model 1.jpg" class="img-1-3" />
+
+  <img src="dist/assets/compressed/Collages/wall collage detail 2.jpg" class="img-1-2" />
+
+  <img src="dist/assets/compressed/Collages/wall collage detail.jpg" class="img-1-2" />
+  <img src="dist/assets/compressed/Collages/wall collage.jpg" class="img-1-2 off-1-4" />
+
+  </div>
+
+  <a id="previous" ng-click="goToPrevious()">Previous</a>
+  <a id="next" ng-click="goToNext()">Next</a>
+
+</div>

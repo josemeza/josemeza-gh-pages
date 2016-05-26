@@ -1,0 +1,55 @@
+#tiles {
+  display: flex;
+
+  @include calc("width", "100% + 25px");
+
+  margin-left: -12.5px;
+}
+
+.tile-wrapper {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+  margin-bottom: 25px;
+
+  text-decoration: none;
+  align-self: stretch;
+}
+
+.tile {
+  padding: 12.5px 12.5px 0 0;
+}
+
+audio, iframe, img, video {
+  max-width: 100%;
+}
+
+@media (min-width: $hd-min) and (max-width: $hd-max) {
+  #tiles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tile-wrapper { min-width: 25%; }
+  video { max-height: 720px; }
+}
+
+@media (min-width: $desktop-min) and (max-width: $desktop-max) {
+  #tiles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tile-wrapper { min-width: 33.3333%; }
+}
+
+@media (min-width: $tablet-min) and (max-width: $tablet-max) {
+  #tiles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tile-wrapper { min-width: 50%; }
+}
+
+@media (min-width: $mobile-min) and (max-width: $mobile-max) {
+  #tiles { flex-direction: column; }
+  .tile-wrapper { min-width: 100%; }
+  .tile { line-height: 14px; }
+}

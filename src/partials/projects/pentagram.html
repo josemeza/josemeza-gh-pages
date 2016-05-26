@@ -1,0 +1,29 @@
+<div class="project-case">
+
+  <div id="case-info" class="columns">
+
+    <span id="meta-info" class="s-no-pad m-no-pad col-l-1-3 col-xl-1-4">
+      <div>{{ projects[currentCase]['year'] }}</div>
+      <!--<div>{{ projects[currentCase]['organization'] }}</div>-->
+      <div>{{ projects[currentCase]['title'] }}</div>
+    </span>
+
+    <span class="s-no-pad m-no-pad col-l-2-3 col-xl-3-4">
+      <div class="case-paragraph">
+        Environmental design for these clients while employed at <a href="http://www.pentagram.com/" target="_blank">Pentagram</a> as an intern designer under the direction of Paula Scher.
+      </div>
+    </span>
+
+  </div>
+
+  <div class="case-images columns">
+    <img src="dist/assets/compressed/Pentagram/Pentagram-02.png" class="img-1-2" />
+    <img src="dist/assets/compressed/Pentagram/Pentagram-01.png" class="img-1-2" />
+    <img src="dist/assets/compressed/Pentagram/Pentagram-03.png" class="img-1-2" />
+    <img src="dist/assets/compressed/Pentagram/TheNewSchoolv2.gif" class="img-1-2" />
+  </div>
+
+  <a id="previous" ng-click="goToPrevious()">Previous</a>
+  <a id="next" ng-click="goToNext()">Next</a>
+
+</div>

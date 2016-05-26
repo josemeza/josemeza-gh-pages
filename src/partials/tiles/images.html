@@ -1,0 +1,17 @@
+<div id="tiles">
+
+  <a ng-repeat="(name, project) in projects"
+     ui-sref="{{ project.url }}"
+     class="tile-wrapper {{ project.width }}">
+
+    <img src="{{ project.img }}" />
+
+    <div class="tile">
+      <div>{{ project.year }}</div>
+      <div>{{ project.organization }}</div>
+      <div>{{ project.title }}</div>
+    </div>
+
+  </a>
+
+</div>
